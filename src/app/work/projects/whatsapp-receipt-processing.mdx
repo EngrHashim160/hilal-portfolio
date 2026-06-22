@@ -1,0 +1,27 @@
+---
+title: "WhatsApp Receipt Processing"
+publishedAt: "2026-03-15"
+summary: "An n8n automation that processes receipts sent over WhatsApp — receiving images via GreenAPI webhook, extracting structured data with an AI agent, storing files in Google Drive, logging to Google Sheets, and replying back through WhatsApp."
+images:
+  - "/work/whatsapp-receipt-processing.jpeg"
+---
+
+## Overview
+
+A WhatsApp-driven receipt processing automation built in n8n. Users send a receipt photo over WhatsApp, and the system extracts the details, files the image, and logs a structured record — all hands-free.
+
+## How it works
+
+- **Webhook trigger**: Incoming WhatsApp messages arrive via the GreenAPI webhook.
+- **File handling**: The receipt image is downloaded and conditionally routed.
+- **AI extraction**: An AI agent (OpenRouter chat model) extracts structured fields from the receipt.
+- **Storage**: Files are uploaded to Google Drive and a row is appended to Google Sheets.
+- **Reply**: Confirmation and results are sent back through the WhatsApp API.
+
+## Tech Stack
+
+n8n, GreenAPI (WhatsApp), OpenRouter LLM, Google Drive, Google Sheets, webhooks.
+
+## Outcome
+
+A conversational, zero-friction way to digitize receipts — turning a quick WhatsApp photo into a structured, stored, and logged record without any app or manual data entry.

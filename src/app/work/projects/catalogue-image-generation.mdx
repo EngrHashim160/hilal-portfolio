@@ -1,0 +1,27 @@
+---
+title: "AI Catalogue Image Generation"
+publishedAt: "2026-03-20"
+summary: "An n8n automation that generates and processes product catalogue images at scale — reading rows from Google Sheets, running images through a Replicate AI model, handling throttling and retries, and publishing results back to Google Drive and Sheets."
+images:
+  - "/work/clone-catalogue-image.jpeg"
+---
+
+## Overview
+
+A batch image-processing automation built in n8n that turns a spreadsheet of products into processed catalogue imagery using AI — with resilient handling for long-running predictions.
+
+## How it works
+
+- **Source**: Reads product rows from Google Sheets and downloads the original images.
+- **AI routing**: An AI service router decides how each image is processed.
+- **Replicate**: Starts a prediction on a Replicate model, then polls until completion.
+- **Resilience**: Skips failed/throttled requests and waits for processing with retry loops.
+- **Publish**: Uploads processed images to Google Drive, makes them public, and updates the sheet.
+
+## Tech Stack
+
+n8n, Replicate AI, Google Sheets, Google Drive, webhooks, batch loops with retry handling.
+
+## Outcome
+
+A scalable pipeline that processes catalogue images in bulk, gracefully handling rate limits and long-running AI jobs — replacing tedious one-by-one editing with a fully automated, sheet-driven flow.

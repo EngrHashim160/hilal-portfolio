@@ -29,7 +29,7 @@ const social = [
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/in/engr-hashim",
   },
   {
     name: "Email",
@@ -195,7 +195,53 @@ const gallery = {
   label: "Gallery",
   title: "Project Gallery",
   description: `Selected screenshots from ${person.name}'s recent AI and automation work`,
-  images: [],
+  images: [
+    {
+      src: "/work/outreach-enrollment.jpeg",
+      alt: "PSM outreach lead enrollment workflow routing leads to Lemlist campaigns",
+      orientation: "horizontal",
+    },
+    {
+      src: "/work/outreach-reply-handler.jpeg",
+      alt: "PSM reply handler routing Lemlist webhook events to Airtable and HubSpot",
+      orientation: "horizontal",
+    },
+    {
+      src: "/work/blog-creator-agent.jpeg",
+      alt: "Blog Creator Agent generating and publishing AI content to WordPress",
+      orientation: "horizontal",
+    },
+    {
+      src: "/work/job-scraper-wordpress.jpeg",
+      alt: "Job scraper to WordPress n8n workflow with AI rewriting",
+      orientation: "horizontal",
+    },
+    {
+      src: "/work/ai-property-assistant.jpeg",
+      alt: "AI Property Assistant routing between weather API and Supabase database",
+      orientation: "horizontal",
+    },
+    {
+      src: "/work/ats-resume-screener.jpeg",
+      alt: "N8N ATS resume screener parsing and scoring candidates",
+      orientation: "horizontal",
+    },
+    {
+      src: "/work/whatsapp-receipt-processing.jpeg",
+      alt: "WhatsApp receipt processing workflow with AI extraction via GreenAPI",
+      orientation: "horizontal",
+    },
+    {
+      src: "/work/clone-catalogue-image.jpeg",
+      alt: "AI catalogue image generation pipeline using Replicate and Google Drive",
+      orientation: "horizontal",
+    },
+    {
+      src: "/work/crm-lead-processing.jpeg",
+      alt: "CRM lead engagement automation generating AI replies via Email and SMS",
+      orientation: "horizontal",
+    },
+  ],
 };
 
 export { person, social, newsletter, home, about, blog, work, gallery };

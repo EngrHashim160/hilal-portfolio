@@ -1,0 +1,27 @@
+---
+title: "AI Property Assistant"
+publishedAt: "2025-10-18"
+summary: "An AI-powered conversational assistant built in n8n that handles both property search queries and weather requests through natural language — using an LLM to detect intent, query a Supabase real estate database, and fetch live weather, with session memory and caching."
+images:
+  - "/work/ai-property-assistant.jpeg"
+link: "https://github.com/EngrHashim160/AI-Property-Assistant-"
+---
+
+## Overview
+
+AI Property Assistant is a conversational agent that answers real estate and weather questions in natural language, routing each query to the right data source automatically.
+
+## How it works
+
+- **Intent detection**: An LLM classifies whether a message is a property search or a weather request.
+- **Property search**: Queries a Supabase real estate database with filters like city and price range.
+- **Weather**: Calls a live weather API and formats the results.
+- **Memory & caching**: Maintains session memory and caches results for fast, contextual conversations.
+
+## Tech Stack
+
+n8n, Groq LLM, Supabase, Weather API, session memory, caching.
+
+## Outcome
+
+A single conversational interface that intelligently routes between structured database queries and real-time API calls — demonstrating clean agentic routing with stateful, cached interactions.

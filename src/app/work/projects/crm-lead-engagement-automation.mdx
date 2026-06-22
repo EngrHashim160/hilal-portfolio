@@ -1,0 +1,26 @@
+---
+title: "CRM Lead Engagement Automation"
+publishedAt: "2026-03-25"
+summary: "An n8n automation that enriches incoming leads from Close CRM, generates a tailored AI response, and routes the reply to the right channel — sending personalized Email or SMS based on the lead's data and context."
+images:
+  - "/work/crm-lead-processing.jpeg"
+---
+
+## Overview
+
+A CRM engagement automation built in n8n that turns a raw lead event into a personalized, channel-aware outreach message — fully automatically.
+
+## How it works
+
+- **Webhook trigger**: Fires on an incoming lead event from Close CRM.
+- **Enrichment**: Pulls lead info, contact, opportunities, and communications from the CRM API.
+- **AI response**: Merges the lead data and generates a tailored reply with an OpenAI model.
+- **Channel routing**: Decides between Email and SMS and sends through the matching Close CRM endpoint.
+
+## Tech Stack
+
+n8n, Close CRM API, OpenAI, webhooks, conditional channel routing.
+
+## Outcome
+
+An end-to-end lead engagement flow that responds to new leads instantly with personalized, context-aware messages on the channel that fits — keeping the pipeline warm without manual follow-up.
