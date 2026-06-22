@@ -1,0 +1,20 @@
+.svgContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+  background: transparent !important;
+}
+
+.svgElement {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+  fill: transparent !important;
+  background: transparent !important;
+  stroke: currentColor;
+}
+
+/* Remove the old animation styles as they're no longer needed */ 

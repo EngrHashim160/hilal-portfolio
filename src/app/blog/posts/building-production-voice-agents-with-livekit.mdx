@@ -1,0 +1,34 @@
+---
+title: "Building Production Voice Agents with LiveKit and FastAPI"
+summary: "Notes on shipping a real-time patient intake voice agent — from the LiveKit + Deepgram + Groq pipeline to containerizing it with Docker and deploying on Google Cloud Run with CI/CD."
+publishedAt: "2026-01-22"
+tag: "Voice AI"
+---
+
+## Why voice agents are different
+
+Text chatbots are forgiving — latency of a second or two barely registers. Voice agents are not. The moment a conversation feels laggy or robotic, users disengage. Building an automated patient intake agent forced me to treat latency, turn-taking, and reliability as first-class concerns.
+
+## The pipeline
+
+The core loop is straightforward in concept:
+
+1. **LiveKit** handles the real-time audio transport and room management.
+2. **Deepgram** provides streaming speech-to-text and text-to-speech.
+3. **Groq LLM** drives the conversation logic and decides what information to collect next.
+
+Keeping each hop fast is what makes the conversation feel natural rather than mechanical.
+
+## Wrapping it as a service
+
+The agent and the call-initiation script are wrapped in a **FastAPI** service. This gives a clean HTTP surface for starting calls and integrating with the rest of a practice's systems.
+
+## Shipping it
+
+- **Docker** containerizes the whole agent for reproducible builds.
+- **Google Cloud Run** runs it serverlessly, scaling with call volume.
+- **GitHub Actions** handles automated CI/CD, so every push that passes goes live.
+
+## Takeaway
+
+A voice agent isn't just a prompt — it's a real-time system. The interesting engineering is in the plumbing: streaming audio, fast LLM responses, and a deployment pipeline that lets you iterate without fear.

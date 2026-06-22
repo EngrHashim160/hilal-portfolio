@@ -1,0 +1,32 @@
+---
+title: "Intake Voice Agent"
+publishedAt: "2026-01-20"
+summary: "AI-powered voice assistant for automated patient intake calls. Conducts natural phone conversations to collect patient information before appointments, deployed on Google Cloud Run with automated CI/CD."
+images: []
+link: "https://github.com/EngrHashim160/intake-voice-agent"
+---
+
+## Overview
+
+Intake Voice Agent is an AI-powered voice assistant that automates patient intake calls. It conducts natural phone conversations to collect patient information ahead of appointments, reducing manual administrative work for medical practices.
+
+## Key Features
+
+- **Natural Phone Conversations**: Real-time voice interaction using LiveKit.
+- **Speech Pipeline**: Deepgram for speech-to-text and text-to-speech.
+- **LLM Reasoning**: Groq LLM powers the conversational logic and information gathering.
+- **API Wrapper**: The agent and call script are wrapped in a FastAPI service.
+
+## Deployment
+
+- Containerized with Docker
+- Deployed on Google Cloud Run
+- Automated CI/CD pipeline via GitHub Actions
+
+## Tech Stack
+
+LiveKit, Deepgram (STT/TTS), Groq LLM, FastAPI, Docker, Google Cloud Run, GitHub Actions.
+
+## Outcome
+
+A production-ready voice agent that demonstrates the full lifecycle of a real-time conversational AI system — from LLM-driven dialogue to containerized cloud deployment with continuous delivery.

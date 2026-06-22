@@ -1,0 +1,34 @@
+---
+title: "Orchestrating Multi-Agent Automation with n8n and OpenClaw"
+summary: "Lessons from building end-to-end outreach and content automation systems — lead generation, qualification, approval flows, AI blog publishing, and multi-channel social distribution."
+publishedAt: "2026-02-12"
+tag: "Automation"
+---
+
+## From scripts to systems
+
+A single automation script saves a few minutes. An orchestrated system changes how a business operates. Building an AI-powered outreach and content platform meant connecting lead generation, qualification, approval, CRM tracking, blog publishing, and social distribution into one coherent flow.
+
+## The orchestration layer
+
+**n8n** is the backbone — it sequences workflows, handles webhooks, and routes data between services. **OpenClaw** adds the agentic layer, where an AI agent makes decisions rather than following a fixed branch.
+
+Around those two sit the integrations:
+
+- **Airtable** as the operational data store
+- **Apollo** and **Google Places** for lead sourcing
+- **Lemlist** and **HubSpot** for outreach and CRM
+- **WordPress** and **OmniSocials** for publishing and distribution
+- **OpenRouter** for flexible LLM access
+
+## Human in the loop
+
+The most important design decision was keeping approval steps. Generated content and qualified leads route through a preview-and-approve gate before anything goes live. Automation should remove drudgery, not remove control.
+
+## Designing for scale
+
+The system was built to expand — competitor research, additional channels, and future AI-powered operations slot into the same orchestration pattern without rewrites.
+
+## Takeaway
+
+Good automation isn't about replacing people. It's about wiring together the boring parts so the system handles real-time lead workflows, campaign launches, reply handling, and multi-channel posting — while humans stay in control of what matters.
