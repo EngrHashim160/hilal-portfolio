@@ -34,6 +34,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
     <Column fillWidth gap="m">
       <Carousel
         sizes="(max-width: 960px) 100vw, 960px"
+        objectFit="contain"
         images={images.map((image) => ({
           src: image,
           alt: title,

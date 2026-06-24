@@ -12,6 +12,7 @@ interface CarouselProps extends React.ComponentProps<typeof Flex> {
   images: Image[];
   indicator?: "line" | "thumbnail";
   aspectRatio?: string;
+  objectFit?: React.CSSProperties["objectFit"];
   sizes?: string;
   revealedByDefault?: boolean;
 }
@@ -20,6 +21,7 @@ const Carousel: React.FC<CarouselProps> = ({
   images = [],
   indicator = "line",
   aspectRatio = "16 / 9",
+  objectFit = "cover",
   sizes,
   revealedByDefault = false,
   ...rest
@@ -94,6 +96,7 @@ const Carousel: React.FC<CarouselProps> = ({
           border="neutral-alpha-weak"
           alt={images[activeIndex]?.alt}
           aspectRatio={aspectRatio}
+          objectFit={objectFit}
           src={images[activeIndex]?.src}
           style={{
             ...(images.length > 1 && {
