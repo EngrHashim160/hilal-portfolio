@@ -64,6 +64,30 @@ export default function Home() {
       />
       <Flex fillWidth paddingY="l" gap="m" mobileDirection="column">
         <Column maxWidth="s" flex={1}>
+          <RevealFx translateY="2" fillWidth horizontal="start" paddingBottom="16">
+            <Flex
+              gap="8"
+              vertical="center"
+              paddingX="12"
+              paddingY="4"
+              radius="full"
+              border="brand-alpha-medium"
+              background="brand-alpha-weak"
+            >
+              <Flex
+                style={{
+                  width: "8px",
+                  height: "8px",
+                  borderRadius: "50%",
+                  background: "var(--accent-solid-strong)",
+                  boxShadow: "0 0 8px var(--accent-solid-strong)",
+                }}
+              />
+              <Text variant="label-default-s" onBackground="brand-strong">
+                AI Automation Engineer · Available for new projects
+              </Text>
+            </Flex>
+          </RevealFx>
           <RevealFx translateY="4" fillWidth horizontal="start" paddingBottom="m">
             <Heading wrap="balance" variant="display-strong-l">
               {home.headline}
@@ -73,6 +97,34 @@ export default function Home() {
             <Text wrap="balance" onBackground="neutral-weak" variant="heading-default-xl">
               {home.subline}
             </Text>
+          </RevealFx>
+          <RevealFx translateY="10" delay={0.3} fillWidth horizontal="start" paddingBottom="20">
+            <Flex gap="24" wrap vertical="center">
+              <Flex direction="column" gap="2">
+                <Text variant="display-strong-xs" onBackground="brand-strong">
+                  15+
+                </Text>
+                <Text variant="label-default-s" onBackground="neutral-weak">
+                  Automations built
+                </Text>
+              </Flex>
+              <Flex direction="column" gap="2">
+                <Text variant="display-strong-xs" onBackground="brand-strong">
+                  End-to-end
+                </Text>
+                <Text variant="label-default-s" onBackground="neutral-weak">
+                  Workflow automation
+                </Text>
+              </Flex>
+              <Flex direction="column" gap="2">
+                <Text variant="display-strong-xs" onBackground="brand-strong">
+                  AI
+                </Text>
+                <Text variant="label-default-s" onBackground="neutral-weak">
+                  Agents &amp; voice bots
+                </Text>
+              </Flex>
+            </Flex>
           </RevealFx>
           <RevealFx translateY="12" delay={0.4} horizontal="start">
             <Button

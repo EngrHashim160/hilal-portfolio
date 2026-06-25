@@ -159,7 +159,7 @@ const SmartImage: React.FC<SmartImageProps> = ({
             fill
             style={{
               objectFit: objectFit,
-              objectPosition: 'top',
+              objectPosition: "center",
             }}
           />
         )}

@@ -16,16 +16,21 @@ type TimeDisplayProps = {
 
 // Function to convert location to a valid IANA time zone
 const getTimeZone = (location: string): string => {
+  // Map for Germany locations
+  if (location.includes("Germany") || location.includes("Frankfurt") || location.includes("Worms")) {
+    return "Europe/Berlin";
+  }
+
   // Map for Pakistan locations
   if (location.includes("Pakistan")) {
     return "Asia/Karachi";
   }
-  
+
   // Default fallbacks for other regions
   if (location.includes("Jakarta")) {
     return "Asia/Jakarta";
   }
-  
+
   // Default to UTC if no matching time zone
   return "UTC";
 };

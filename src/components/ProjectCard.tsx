@@ -14,6 +14,7 @@ interface ProjectCardProps {
   href: string;
   priority?: boolean;
   images: string[];
+  aspectRatio?: string;
   title: string;
   content: string;
   description: string;
@@ -24,6 +25,7 @@ interface ProjectCardProps {
 export const ProjectCard: React.FC<ProjectCardProps> = ({
   href,
   images = [],
+  aspectRatio,
   title,
   content,
   description,
@@ -34,7 +36,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
     <Column fillWidth gap="m">
       <Carousel
         sizes="(max-width: 960px) 100vw, 960px"
-        objectFit="contain"
+        objectFit="cover"
+        aspectRatio={aspectRatio ?? "16 / 9"}
         images={images.map((image) => ({
           src: image,
           alt: title,

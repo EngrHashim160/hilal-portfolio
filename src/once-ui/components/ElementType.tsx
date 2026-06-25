@@ -10,17 +10,19 @@ interface ElementTypeProps {
 }
 
 const isExternalLink = (url: string) => /^https?:\/\//.test(url);
+// mailto:, tel:, sms: etc. must render as plain anchors, not Next.js <Link>
+const isSpecialProtocol = (url: string) => /^(mailto:|tel:|sms:)/.test(url);
 
 const ElementType = forwardRef<HTMLElement, ElementTypeProps>(
   ({ href, children, className, style, ...props }, ref) => {
     if (href) {
       const isExternal = isExternalLink(href);
-      if (isExternal) {
+      const isSpecial = isSpecialProtocol(href);
+      if (isExternal || isSpecial) {
         return (
           <a
             href={href}
-            target="_blank"
-            rel="noreferrer"
+            {...(isExternal ? { target: "_blank", rel: "noreferrer" } : {})}
             ref={ref as React.Ref<HTMLAnchorElement>}
             className={className}
             style={style}

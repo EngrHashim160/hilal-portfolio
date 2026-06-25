@@ -1,57 +1,58 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Muhammad",
-  lastName: "Hashim",
+  firstName: "Hilal",
+  lastName: "Ahmad",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "AI Engineer",
+  role: "AI Automation Engineer",
   avatar: "/profileimg.jpg",
-  location: "Ismaila, Swabi, KPK, Pakistan",
-  languages: ["English", "Urdu"],
+  location: "Frankfurt, Worms, Germany",
+  languages: ["English"],
 };
 
 const newsletter = {
   display: true,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
-    <>Updates on AI engineering, agentic systems, and automation workflows.</>
+    <>Updates on AI automation, n8n workflows, and agentic systems that save businesses hours every week.</>
   ),
 };
 
 const social = [
   {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/EngrHashim160",
-  },
-  {
-    name: "LinkedIn",
-    icon: "linkedin",
-    link: "https://www.linkedin.com/in/engr-hashim",
+    name: "Upwork",
+    icon: "upwork",
+    link: "https://www.upwork.com/freelancers/~014b1feb586ed92c3a?mp_source=share",
   },
   {
     name: "Email",
     icon: "email",
-    link: "mailto:engrhashim160@gmail.com",
+    link: "https://mail.google.com/mail/?view=cm&fs=1&to=hilal96ahmad@gmail.com",
   },
 ];
 
 const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing ${person.name}, an ${person.role} focused on agentic AI, automation, and applied machine learning.`,
-  headline: <>AI Engineer</>,
+  description: `Portfolio website showcasing ${person.name}, an ${person.role} who builds intelligent automation and AI agents that handle lead generation, outreach, CRM, and content operations for businesses.`,
+  headline: (
+    <>
+      I automate the work
+      <br />
+      that slows businesses down
+    </>
+  ),
   subline: (
     <>
-      I&apos;m Muhammad Hashim, an <InlineCode>AI Engineer</InlineCode> based in{" "}
-      <InlineCode>Pakistan</InlineCode> building intelligent agents,
-      voice assistants, and end-to-end automation systems.
+      I&apos;m <strong>Hilal Ahmad</strong> — an AI Automation Engineer who turns repetitive,
+      manual tasks into reliable systems that run themselves.
       <br />
-      I work across <InlineCode>LangChain</InlineCode>, <InlineCode>LangGraph</InlineCode>,{" "}
-      <InlineCode>LiveKit</InlineCode>, <InlineCode>n8n</InlineCode>, and{" "}
-      <InlineCode>OpenClaw</InlineCode> to ship production-grade Generative &amp; Agentic AI.
+      <br />
+      I design intelligent automation and AI agents that handle lead generation, outreach, CRM,
+      and content operations end to end — so your team can stop doing busywork and{" "}
+      <strong>save hours every week</strong>.
     </>
   ),
 };
@@ -68,25 +69,24 @@ const about = {
     display: true,
   },
   calendar: {
-    display: false,
-    link: "",
+    display: true,
+    link: "https://cal.com/hilal-ahmad-xerchg",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        I&apos;m Muhammad Hashim, an AI Engineer specializing in Generative AI,
-        agentic systems, and automation. I design and ship multi-agent
-        architectures, voice assistants, and AI-driven workflows that solve real
-        business problems.
+        I&apos;m Hilal Ahmad, an AI Automation Engineer who helps businesses replace
+        manual, repetitive work with reliable automated systems. I&apos;ve delivered
+        turnkey automation for 15+ SMB clients — orchestrating cross-platform workflows
+        in n8n, Zapier, and Make.com to sync CRMs, help desks, and marketing tools.
         <br />
         <br />
-        My work spans LangChain and LangGraph agents, LiveKit/Vapi/Retell voice
-        agents, and large-scale automation with n8n, OpenClaw, and Power Automate.
-        I&apos;m also experienced with computer vision, NLP, RAG applications, and
-        deploying AI services on Docker, Google Cloud Run, and Hostinger VPS with
-        full CI/CD.
+        I specialize in GHL and HubSpot automation, custom API and webhook integrations
+        that cut manual data entry by up to 90%, and AI agents — from RAG chatbots to
+        VAPI and GPT-powered voice agents for 24/7 lead qualification and support. I also
+        train teams, having coached 50+ professionals on end-to-end business automation.
       </>
     ),
   },
@@ -95,35 +95,47 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "AI Data House",
-        timeframe: "March 2026 – Present",
+        company: "Tech Solute",
+        timeframe: "January 2022 – Present",
+        role: "AI Automation Engineer",
+        achievements: [
+          <>Designing and implementing AI-powered automation solutions to streamline business operations and improve efficiency.</>,
+          <>Building workflow automation, AI agents, and chatbot integrations for process optimization.</>,
+          <>Developing custom API integrations and leveraging Generative AI to automate repetitive tasks and enhance productivity.</>,
+        ],
+        images: [],
+      },
+      {
+        company: "Softlare",
+        timeframe: "September 2017 – December 2021",
         role: "AI Engineer",
         achievements: [
-          <>Building applications using Machine Learning, Deep Learning, and Computer Vision.</>,
-          <>Developing Generative AI solutions with LangChain and Agentic AI systems with LangGraph.</>,
-          <>Creating voice agents with LiveKit, Vapi, and Retell AI for real-time conversations.</>,
-          <>Designing automation workflows with Zapier, n8n, and OpenClaw for business operations.</>,
+          <>Designed and developed AI-driven applications using Machine Learning, Deep Learning, NLP, Computer Vision, and Generative AI.</>,
+          <>Responsible for model development, deployment, optimization, and AI integration across software solutions.</>,
         ],
         images: [],
       },
       {
-        company: "Zikra Infotech LLC",
-        timeframe: "September 2025 – February 2026",
-        role: "Junior AI Engineer",
+        company: "Self-Employed",
+        timeframe: "Freelance",
+        role: "Freelance Automation Consultant",
         achievements: [
-          <>Built SaaS applications for the US region using LangChain, LangGraph, and LiveKit.</>,
-          <>Developed AI agents tailored to businesses and specialized Medical Practices.</>,
-          <>Delivered conversational and voice-based agents for client-facing products.</>,
+          <>Designed and delivered turnkey GHL &amp; HubSpot automation solutions for 15+ SMB clients.</>,
+          <>Orchestrated cross-platform workflows in n8n, Zapier &amp; Make.com to sync CRMs, help desks &amp; marketing tools.</>,
+          <>Built custom APIs &amp; webhooks to integrate legacy systems, reducing manual data entry by 90%.</>,
+          <>Deployed VAPI voice agents and GPT-powered AI agents for 24/7 lead qualification and support.</>,
         ],
         images: [],
       },
       {
-        company: "Logic Loomer",
-        timeframe: "April 2024 – June 2024",
-        role: "AI Intern",
+        company: "Tech Academy",
+        timeframe: "Workshops",
+        role: "Automation Trainer & Workshop Leader",
         achievements: [
-          <>Completed a 3-month AI internship focused on model training and automation pipelines.</>,
-          <>Built RAG applications and conducted exploratory research under senior engineer mentorship.</>,
+          <>Developed and taught a 5-week &ldquo;End-to-End Business Automation&rdquo; bootcamp covering GHL, n8n, Zapier &amp; Make.com.</>,
+          <>Created hands-on labs for RAG (Pinecone + Django) chatbots, ManyChat bots, and Google Apps Script automations.</>,
+          <>Coached 50+ participants on APIs, webhooks, and AI agent deployment — 90% reported immediate productivity gains.</>,
+          <>Authored training materials and video tutorials that remain a core resource for ongoing student support.</>,
         ],
         images: [],
       },
@@ -134,16 +146,28 @@ const about = {
     title: "Education",
     institutions: [
       {
-        name: "University of Engineering & Technology, Mardan",
+        name: "Technische Universität Darmstadt",
         description: (
-          <>BSc Software Engineering | 2021 – 2025 | CGPA: 3.53</>
+          <>Bachelor of Engineering (BEng), Computer Science | 2014 – 2017</>
         ),
       },
+    ],
+  },
+  certifications: {
+    display: true,
+    title: "Certifications",
+    items: [
       {
-        name: "Al-Badar Model School & College",
-        description: (
-          <>F.Sc (Pre-Engineering) | 2019 – 2021 | Marks: 990/1100</>
-        ),
+        name: "OpenClaw AI Systems Implementation Specialist",
+        description: <>Coursera · Issued February 2026</>,
+      },
+      {
+        name: "Docker Mastery: with Kubernetes + Swarm from a Docker Captain",
+        description: <>Udemy · Issued April 2024</>,
+      },
+      {
+        name: "Certified AI Automation & Agent Architect",
+        description: <>iSkills · Issued March 2022</>,
       },
     ],
   },
@@ -152,28 +176,36 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "Generative & Agentic AI",
+        title: "Workflow Automation",
         description: (
           <>
-            LangChain, LangGraph, Langfuse, LangGraph Deployment, Agentic AI, RAG, Model Context Protocol (MCP)
+            n8n, OpenClaw, Zapier, Power Automate, Make, webhooks, scheduled & event-driven workflows, API integrations
           </>
         ),
       },
       {
-        title: "Voice & Automation",
-        description: <>LiveKit Agents, Vapi, Retell AI, n8n, Zapier, OpenClaw, Hermes, Power Automate</>,
+        title: "AI Agents & Orchestration",
+        description: (
+          <>
+            LangChain, LangGraph, Langfuse, Agentic AI, multi-agent systems, RAG, Model Context Protocol (MCP)
+          </>
+        ),
+      },
+      {
+        title: "Voice Automation",
+        description: <>LiveKit Agents, Vapi, Retell AI, Deepgram, automated calls & conversational agents</>,
+      },
+      {
+        title: "Integrations & Tools",
+        description: <>Airtable, HubSpot, GoHighLevel, WordPress, Slack, Google Workspace, WhatsApp, Telegram, Lemlist, Apollo</>,
       },
       {
         title: "Machine Learning",
         description: <>Machine Learning, Deep Learning, Computer Vision, NLP, TensorFlow</>,
       },
       {
-        title: "Programming & Backend",
-        description: <>Python, C, C++, FastAPI, SQL, NoSQL, HTML, CSS, JavaScript</>,
-      },
-      {
-        title: "DevOps & Cloud",
-        description: <>Docker, CI/CD, AWS, Google Cloud Run, Hostinger, Claude Code</>,
+        title: "Programming & DevOps",
+        description: <>Python, FastAPI, SQL, NoSQL, JavaScript, Docker, CI/CD, AWS, Google Cloud Run, Hostinger</>,
       },
     ],
   },
@@ -181,20 +213,20 @@ const about = {
 
 const blog = {
   label: "Blog",
-  title: "Project notes",
-  description: `AI, agentic systems, and automation notes from ${person.name}'s recent work`,
+  title: "Automation notes",
+  description: `Automation, n8n workflows, and AI agent notes from ${person.name}'s recent work`,
 };
 
 const work = {
   label: "Work",
-  title: "Selected work",
-  description: `AI agents, automation systems, and ML projects built by ${person.name}`,
+  title: "Selected automation work",
+  description: `Automation systems, AI agents, and workflow integrations built by ${person.name}`,
 };
 
 const gallery = {
   label: "Gallery",
-  title: "Project Gallery",
-  description: `Selected screenshots from ${person.name}'s recent AI and automation work`,
+  title: "Automation Gallery",
+  description: `Real n8n and automation workflow screenshots from ${person.name}'s recent projects`,
   images: [
     {
       src: "/work/outreach-enrollment.jpeg",

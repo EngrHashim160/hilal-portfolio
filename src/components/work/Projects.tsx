@@ -1,4 +1,4 @@
-import { getPosts } from "@/app/utils/utils";
+import { getPosts, getImageAspectRatio } from "@/app/utils/utils";
 import { Column } from "@/once-ui/components";
 import { ProjectCard } from "@/components";
 
@@ -25,6 +25,7 @@ export function Projects({ range }: ProjectsProps) {
           key={post.slug}
           href={`work/${post.slug}`}
           images={post.metadata.images}
+          aspectRatio={getImageAspectRatio(post.metadata.images?.[0])}
           title={post.metadata.title}
           description={post.metadata.summary}
           content={post.content}

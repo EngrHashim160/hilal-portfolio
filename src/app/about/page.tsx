@@ -62,6 +62,11 @@ export default function About() {
       items: about.studies.institutions.map((institution) => institution.name),
     },
     {
+      title: about.certifications.title,
+      display: about.certifications.display,
+      items: about.certifications.items.map((item) => item.name),
+    },
+    {
       title: about.technical.title,
       display: about.technical.display,
       items: about.technical.skills.map((skill) => skill.title),
@@ -139,29 +144,38 @@ export default function About() {
             marginBottom="32"
           >
             {about.calendar.display && (
-              <Flex
-                fitWidth
-                border="brand-alpha-medium"
-                className={styles.blockAlign}
-                style={{
-                  backdropFilter: "blur(var(--static-space-1))",
-                }}
-                background="brand-alpha-weak"
-                radius="full"
-                padding="4"
-                gap="8"
-                marginBottom="m"
-                vertical="center"
+              <a
+                href={about.calendar.link}
+                target="_blank"
+                rel="noreferrer"
+                className="text-decoration-none"
+                style={{ width: "fit-content" }}
               >
-                <Icon paddingLeft="12" name="calendar" onBackground="brand-weak" />
-                <Flex paddingX="8">Schedule a call</Flex>
-                <IconButton
-                  href={about.calendar.link}
-                  data-border="rounded"
-                  variant="secondary"
-                  icon="chevronRight"
-                />
-              </Flex>
+                <Flex
+                  fitWidth
+                  border="brand-alpha-medium"
+                  className={styles.blockAlign}
+                  style={{
+                    backdropFilter: "blur(var(--static-space-1))",
+                    cursor: "pointer",
+                  }}
+                  background="brand-alpha-weak"
+                  radius="full"
+                  padding="4"
+                  gap="8"
+                  marginBottom="m"
+                  vertical="center"
+                >
+                  <Icon paddingLeft="12" name="calendar" onBackground="brand-weak" />
+                  <Flex paddingX="8">Schedule a call</Flex>
+                  <IconButton
+                    href={about.calendar.link}
+                    data-border="rounded"
+                    variant="secondary"
+                    icon="chevronRight"
+                  />
+                </Flex>
+              </a>
             )}
             <Heading className={styles.textAlign} variant="display-strong-xl">
               {person.name}
@@ -284,6 +298,31 @@ export default function About() {
                     </Text>
                     <Text variant="heading-default-xs" onBackground="neutral-weak">
                       {institution.description}
+                    </Text>
+                  </Column>
+                ))}
+              </Column>
+            </>
+          )}
+
+          {about.certifications.display && (
+            <>
+              <Heading
+                as="h2"
+                id={about.certifications.title}
+                variant="display-strong-s"
+                marginBottom="m"
+              >
+                {about.certifications.title}
+              </Heading>
+              <Column fillWidth gap="l" marginBottom="40">
+                {about.certifications.items.map((item, index) => (
+                  <Column key={`${item.name}-${index}`} fillWidth gap="4">
+                    <Text id={item.name} variant="heading-strong-l">
+                      {item.name}
+                    </Text>
+                    <Text variant="heading-default-xs" onBackground="neutral-weak">
+                      {item.description}
                     </Text>
                   </Column>
                 ))}
