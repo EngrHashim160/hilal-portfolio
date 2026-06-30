@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3036" height="328" viewBox="0 0 3036 328" role="img" aria-label="Daily Sending Messages Make.com workflow">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0f1c"/>
+      <stop offset="100%" stop-color="#0b1424"/>
+    </linearGradient>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#3b82f6" fill-opacity="0.08"/>
+    </pattern>
+  </defs>
+  <rect width="3036" height="328" fill="url(#bg)"/>
+  <rect width="3036" height="328" fill="url(#dots)"/>
+  <text x="48" y="42" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="800" fill="#f1f5f9">Daily Sending Messages</text>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <path d="M644,124 C661,124 661,124 678,124" fill="none" stroke="#3b82f6" stroke-opacity="0.45" stroke-width="2"/>
+<path d="M644,220 C661,220 661,220 678,220" fill="none" stroke="#3b82f6" stroke-opacity="0.45" stroke-width="2"/>
+<path d="M854,220 C871,220 871,220 888,220" fill="none" stroke="#3b82f6" stroke-opacity="0.45" stroke-width="2"/>
+<path d="M1064,220 C1081,220 1081,220 1098,220" fill="none" stroke="#3b82f6" stroke-opacity="0.45" stroke-width="2"/>
+<path d="M1274,220 C1291,220 1291,220 1308,220" fill="none" stroke="#3b82f6" stroke-opacity="0.45" stroke-width="2"/>
+<path d="M1484,220 C1501,220 1501,220 1518,220" fill="none" stroke="#3b82f6" stroke-opacity="0.45" stroke-width="2"/>
+<path d="M1694,220 C1711,220 1711,220 1728,220" fill="none" stroke="#3b82f6" stroke-opacity="0.45" stroke-width="2"/>
+<path d="M1904,220 C1921,220 1921,220 1938,220" fill="none" stroke="#3b82f6" stroke-opacity="0.45" stroke-width="2"/>
+<path d="M2114,220 C2131,220 2131,220 2148,220" fill="none" stroke="#3b82f6" stroke-opacity="0.45" stroke-width="2"/>
+<path d="M2324,220 C2341,220 2341,220 2358,220" fill="none" stroke="#3b82f6" stroke-opacity="0.45" stroke-width="2"/>
+<path d="M2534,220 C2551,220 2551,220 2568,220" fill="none" stroke="#3b82f6" stroke-opacity="0.45" stroke-width="2"/>
+<path d="M2744,220 C2761,220 2761,220 2778,220" fill="none" stroke="#3b82f6" stroke-opacity="0.45" stroke-width="2"/>
+<path d="M224,124 C241,124 241,172 258,172" fill="none" stroke="#3b82f6" stroke-opacity="0.45" stroke-width="2"/>
+<path d="M434,172 C451,172 451,124 468,124" fill="none" stroke="#3b82f6" stroke-opacity="0.45" stroke-width="2"/>
+<path d="M434,172 C451,172 451,220 468,220" fill="none" stroke="#3b82f6" stroke-opacity="0.45" stroke-width="2"/>
+    <g transform="translate(48,88)">
+        <rect width="176" height="72" rx="12" fill="#0f1830" stroke="#f59e0b" stroke-opacity="0.85" stroke-width="2"/>
+        <rect width="6" height="72" rx="3" fill="#f59e0b"/>
+        <text x="20" y="30" font-size="16" font-weight="700" fill="#e2e8f0">Airtable</text>
+        <text x="20" y="52" font-size="13" font-weight="500" fill="#94a3b8">Search Records</text>
+      </g>
+<g transform="translate(468,88)">
+        <rect width="176" height="72" rx="12" fill="#0f1830" stroke="#64748b" stroke-opacity="0.85" stroke-width="2"/>
+        <rect width="6" height="72" rx="3" fill="#64748b"/>
+        <text x="20" y="30" font-size="16" font-weight="700" fill="#e2e8f0">Iterator</text>
+        <text x="20" y="52" font-size="13" font-weight="500" fill="#94a3b8">Loop</text>
+      </g>
+<g transform="translate(678,88)">
+        <rect width="176" height="72" rx="12" fill="#0f1830" stroke="#f59e0b" stroke-opacity="0.85" stroke-width="2"/>
+        <rect width="6" height="72" rx="3" fill="#f59e0b"/>
+        <text x="20" y="30" font-size="16" font-weight="700" fill="#e2e8f0">Airtable</text>
+        <text x="20" y="52" font-size="13" font-weight="500" fill="#94a3b8">Get Record</text>
+      </g>
+<g transform="translate(468,184)">
+        <rect width="176" height="72" rx="12" fill="#0f1830" stroke="#64748b" stroke-opacity="0.85" stroke-width="2"/>
+        <rect width="6" height="72" rx="3" fill="#64748b"/>
+        <text x="20" y="30" font-size="16" font-weight="700" fill="#e2e8f0">Iterator</text>
+        <text x="20" y="52" font-size="13" font-weight="500" fill="#94a3b8">Loop</text>
+      </g>
+<g transform="translate(678,184)">
+        <rect width="176" height="72" rx="12" fill="#0f1830" stroke="#f59e0b" stroke-opacity="0.85" stroke-width="2"/>
+        <rect width="6" height="72" rx="3" fill="#f59e0b"/>
+        <text x="20" y="30" font-size="16" font-weight="700" fill="#e2e8f0">Airtable</text>
+        <text x="20" y="52" font-size="13" font-weight="500" fill="#94a3b8">Get Record</text>
+      </g>
+<g transform="translate(888,184)">
+        <rect width="176" height="72" rx="12" fill="#0f1830" stroke="#f59e0b" stroke-opacity="0.85" stroke-width="2"/>
+        <rect width="6" height="72" rx="3" fill="#f59e0b"/>
+        <text x="20" y="30" font-size="16" font-weight="700" fill="#e2e8f0">Airtable</text>
+        <text x="20" y="52" font-size="13" font-weight="500" fill="#94a3b8">Search Records</text>
+      </g>
+<g transform="translate(1098,184)">
+        <rect width="176" height="72" rx="12" fill="#0f1830" stroke="#0ea5e9" stroke-opacity="0.85" stroke-width="2"/>
+        <rect width="6" height="72" rx="3" fill="#0ea5e9"/>
+        <text x="20" y="30" font-size="16" font-weight="700" fill="#e2e8f0">HTTP</text>
+        <text x="20" y="52" font-size="13" font-weight="500" fill="#94a3b8">Download File</text>
+      </g>
+<g transform="translate(1308,184)">
+        <rect width="176" height="72" rx="12" fill="#0f1830" stroke="#1d4ed8" stroke-opacity="0.85" stroke-width="2"/>
+        <rect width="6" height="72" rx="3" fill="#1d4ed8"/>
+        <text x="20" y="30" font-size="16" font-weight="700" fill="#e2e8f0">SendGrid</text>
+        <text x="20" y="52" font-size="13" font-weight="500" fill="#94a3b8">Send Email</text>
+      </g>
+<g transform="translate(1518,184)">
+        <rect width="176" height="72" rx="12" fill="#0f1830" stroke="#f59e0b" stroke-opacity="0.85" stroke-width="2"/>
+        <rect width="6" height="72" rx="3" fill="#f59e0b"/>
+        <text x="20" y="30" font-size="16" font-weight="700" fill="#e2e8f0">Airtable</text>
+        <text x="20" y="52" font-size="13" font-weight="500" fill="#94a3b8">Create Record</text>
+      </g>
+<g transform="translate(1728,184)">
+        <rect width="176" height="72" rx="12" fill="#0f1830" stroke="#f59e0b" stroke-opacity="0.85" stroke-width="2"/>
+        <rect width="6" height="72" rx="3" fill="#f59e0b"/>
+        <text x="20" y="30" font-size="16" font-weight="700" fill="#e2e8f0">Airtable</text>
+        <text x="20" y="52" font-size="13" font-weight="500" fill="#94a3b8">Search Records</text>
+      </g>
+<g transform="translate(1938,184)">
+        <rect width="176" height="72" rx="12" fill="#0f1830" stroke="#f59e0b" stroke-opacity="0.85" stroke-width="2"/>
+        <rect width="6" height="72" rx="3" fill="#f59e0b"/>
+        <text x="20" y="30" font-size="16" font-weight="700" fill="#e2e8f0">Airtable</text>
+        <text x="20" y="52" font-size="13" font-weight="500" fill="#94a3b8">Update Records</text>
+      </g>
+<g transform="translate(2148,184)">
+        <rect width="176" height="72" rx="12" fill="#0f1830" stroke="#f59e0b" stroke-opacity="0.85" stroke-width="2"/>
+        <rect width="6" height="72" rx="3" fill="#f59e0b"/>
+        <text x="20" y="30" font-size="16" font-weight="700" fill="#e2e8f0">Airtable</text>
+        <text x="20" y="52" font-size="13" font-weight="500" fill="#94a3b8">Get Record</text>
+      </g>
+<g transform="translate(2358,184)">
+        <rect width="176" height="72" rx="12" fill="#0f1830" stroke="#f59e0b" stroke-opacity="0.85" stroke-width="2"/>
+        <rect width="6" height="72" rx="3" fill="#f59e0b"/>
+        <text x="20" y="30" font-size="16" font-weight="700" fill="#e2e8f0">Airtable</text>
+        <text x="20" y="52" font-size="13" font-weight="500" fill="#94a3b8">Update Records</text>
+      </g>
+<g transform="translate(2568,184)">
+        <rect width="176" height="72" rx="12" fill="#0f1830" stroke="#64748b" stroke-opacity="0.85" stroke-width="2"/>
+        <rect width="6" height="72" rx="3" fill="#64748b"/>
+        <text x="20" y="30" font-size="16" font-weight="700" fill="#e2e8f0">Aggregator</text>
+        <text x="20" y="52" font-size="13" font-weight="500" fill="#94a3b8">Combine</text>
+      </g>
+<g transform="translate(2778,184)">
+        <rect width="176" height="72" rx="12" fill="#0f1830" stroke="#64748b" stroke-opacity="0.85" stroke-width="2"/>
+        <rect width="6" height="72" rx="3" fill="#64748b"/>
+        <text x="20" y="30" font-size="16" font-weight="700" fill="#e2e8f0">Set Variable</text>
+        <text x="20" y="52" font-size="13" font-weight="500" fill="#94a3b8">Store</text>
+      </g>
+<g transform="translate(258,136)">
+        <rect width="176" height="72" rx="12" fill="#0f1830" stroke="#7c3aed" stroke-opacity="0.85" stroke-width="2"/>
+        <rect width="6" height="72" rx="3" fill="#7c3aed"/>
+        <text x="20" y="30" font-size="16" font-weight="700" fill="#e2e8f0">Router</text>
+        <text x="20" y="52" font-size="13" font-weight="500" fill="#94a3b8">2 routes</text>
+      </g>
+  </g>
+</svg>

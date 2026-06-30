@@ -1,0 +1,114 @@
+[
+  {
+    "name": "Activate/Deactivate WhatsApp For Subscribers",
+    "file": "make-activate-deactivate-whatsapp-for-subscribers.svg",
+    "modules": 3,
+    "apps": [
+      "Webhook",
+      "Airtable"
+    ]
+  },
+  {
+    "name": "Add Subscriber (SD->Klavyio)",
+    "file": "make-add-subscriber.svg",
+    "modules": 2,
+    "apps": [
+      "Webhook",
+      "Klaviyo"
+    ]
+  },
+  {
+    "name": "Adds New Subcriber To Airtable",
+    "file": "make-adds-new-subcriber-to-airtable.svg",
+    "modules": 2,
+    "apps": [
+      "SuiteDash",
+      "Airtable"
+    ]
+  },
+  {
+    "name": "AWeber Engagement Tracking",
+    "file": "make-aweber-engagement-tracking.svg",
+    "modules": 6,
+    "apps": [
+      "AWeber",
+      "Router"
+    ]
+  },
+  {
+    "name": "Daily Mail",
+    "file": "make-daily-mail.svg",
+    "modules": 8,
+    "apps": [
+      "Airtable",
+      "HTTP",
+      "Cloudinary",
+      "Aggregator",
+      "Iterator"
+    ]
+  },
+  {
+    "name": "Daily Sending Messages",
+    "file": "make-daily-sending-messages.svg",
+    "modules": 16,
+    "apps": [
+      "Airtable",
+      "Iterator",
+      "HTTP",
+      "SendGrid",
+      "Aggregator",
+      "Set Variable",
+      "Router"
+    ]
+  },
+  {
+    "name": "Master Flow Stripe Event Router",
+    "file": "make-master-flow-stripe-event-router.svg",
+    "modules": 75,
+    "apps": [
+      "Webhook",
+      "HTTP",
+      "Airtable",
+      "Router",
+      "AWeber",
+      "SuiteDash",
+      "Iterator"
+    ]
+  },
+  {
+    "name": "PageFly Community Story to Shopify Blog",
+    "file": "make-pagefly-community-story-to-shopify-blog.svg",
+    "modules": 3,
+    "apps": [
+      "Tally",
+      "HTTP",
+      "Shopify"
+    ]
+  },
+  {
+    "name": "PET Profile Report",
+    "file": "make-pet-profile-report.svg",
+    "modules": 6,
+    "apps": [
+      "Webhook",
+      "SuiteDash",
+      "Regex",
+      "Airtable",
+      "Router"
+    ]
+  },
+  {
+    "name": "PPD_Subscription",
+    "file": "make-ppd-subscription.svg",
+    "modules": 59,
+    "apps": [
+      "Webhook",
+      "HTTP",
+      "Airtable",
+      "Router",
+      "AWeber",
+      "SuiteDash",
+      "Iterator"
+    ]
+  }
+]

@@ -1,0 +1,79 @@
+---
+title: "Make.com Automations"
+publishedAt: "2026-06-25"
+summary: "A collection of 10 production Make.com scenarios automating CRM sync, email marketing, Stripe billing lifecycles, and e-commerce publishing — integrating Airtable, Stripe, SendGrid, Klaviyo, AWeber, SuiteDash, Shopify, Cloudinary, and Tally through webhooks and multi-branch routers."
+images:
+  - "/work/cover-make-automations.svg"
+---
+
+## Overview
+
+This is a collection of **10 production Make.com scenarios** I designed and shipped — ranging from simple two-step syncs to a 75-module Stripe event router. Each one replaces manual, repetitive operations with a reliable automated workflow.
+
+Across these scenarios I integrate **Airtable, Stripe, SendGrid, Klaviyo, AWeber, SuiteDash, Shopify, Cloudinary, and Tally**, using webhooks, multi-branch routers, iterators, and aggregators to handle real business logic.
+
+> Each diagram below is generated directly from the actual Make.com blueprint. Click any diagram to open it full size.
+
+## Master Flow — Stripe Event Router
+
+The flagship scenario: a central **Stripe webhook orchestrator** with 75 modules. It receives Stripe events, verifies them with HTTP calls, looks up the customer in Airtable, then routes through nested branches to handle each subscription lifecycle event — creating and updating Airtable records and keeping subscribers in sync across AWeber and SuiteDash.
+
+![Master Flow Stripe Event Router](/work/make-master-flow-stripe-event-router.svg)
+
+## PPD Subscription
+
+A 59-module **subscription management** scenario. A webhook triggers nested routers that branch by subscription state, making HTTP calls and reading, updating, creating, and upserting Airtable records to keep subscription data consistent across every scenario.
+
+![PPD Subscription](/work/make-ppd-subscription.svg)
+
+## Daily Sending Messages
+
+A scheduled **daily messaging engine**. It pulls recipients from Airtable, routes them, loops with iterators, downloads attachments, sends personalized email through SendGrid, and logs every send back to Airtable with status tracking.
+
+![Daily Sending Messages](/work/make-daily-sending-messages.svg)
+
+## Daily Mail
+
+A **daily email with hosted imagery**. It reads recipients from Airtable, fetches an image over HTTP and uploads it to Cloudinary, aggregates the data, sends the mail, and marks each record as sent so nobody is emailed twice.
+
+![Daily Mail](/work/make-daily-mail.svg)
+
+## AWeber Engagement Tracking
+
+Monitors **subscriber engagement in AWeber**. It finds subscribers, reads their activity, then routes them through a three-way branch to update their tags and fields based on how engaged they are.
+
+![AWeber Engagement Tracking](/work/make-aweber-engagement-tracking.svg)
+
+## PET Profile Report
+
+Generates **pet profile reports** from incoming data. A webhook fetches the SuiteDash contact, then a router parses fields with regex and stores structured records in Airtable.
+
+![PET Profile Report](/work/make-pet-profile-report.svg)
+
+## Activate / Deactivate WhatsApp For Subscribers
+
+Toggles a subscriber's **WhatsApp status**. A webhook looks the subscriber up in Airtable and flips their WhatsApp subscription on or off.
+
+![Activate Deactivate WhatsApp For Subscribers](/work/make-activate-deactivate-whatsapp-for-subscribers.svg)
+
+## PageFly Community Story to Shopify Blog
+
+Turns **form submissions into blog posts**. A new Tally form response triggers a file download and publishes a fresh Shopify blog article automatically.
+
+![PageFly Community Story to Shopify Blog](/work/make-pagefly-community-story-to-shopify-blog.svg)
+
+## Add Subscriber (SuiteDash → Klaviyo)
+
+Syncs **new subscribers between platforms**. A webhook pushes a new SuiteDash subscriber straight into a Klaviyo list.
+
+![Add Subscriber SuiteDash to Klaviyo](/work/make-add-subscriber.svg)
+
+## Adds New Subscriber To Airtable
+
+Keeps **contacts in sync**. It reads SuiteDash contacts and creates matching records in Airtable.
+
+![Adds New Subscriber To Airtable](/work/make-adds-new-subcriber-to-airtable.svg)
+
+## Tech Stack
+
+Make.com, Airtable, Stripe, SendGrid, Klaviyo, AWeber, SuiteDash, Shopify, Cloudinary, Tally, webhooks, multi-branch routers, iterators & aggregators.

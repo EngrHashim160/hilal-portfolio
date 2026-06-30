@@ -273,6 +273,31 @@ const gallery = {
       alt: "CRM lead engagement automation generating AI replies via Email and SMS",
       orientation: "horizontal",
     },
+    {
+      src: "/work/make-master-flow-stripe-event-router.svg",
+      alt: "Make.com Stripe event router with 75 modules orchestrating subscription lifecycles across Airtable, AWeber and SuiteDash",
+      orientation: "horizontal",
+    },
+    {
+      src: "/work/make-ppd-subscription.svg",
+      alt: "Make.com subscription management scenario with nested routers and Airtable",
+      orientation: "horizontal",
+    },
+    {
+      src: "/work/make-aweber-engagement-tracking.svg",
+      alt: "Make.com AWeber engagement tracking with three-way router",
+      orientation: "horizontal",
+    },
+    {
+      src: "/work/make-daily-sending-messages.svg",
+      alt: "Make.com daily messaging engine sending email via SendGrid and logging to Airtable",
+      orientation: "horizontal",
+    },
+    {
+      src: "/work/make-pet-profile-report.svg",
+      alt: "Make.com pet profile report generator parsing data with regex into Airtable",
+      orientation: "horizontal",
+    },
   ],
 };
 

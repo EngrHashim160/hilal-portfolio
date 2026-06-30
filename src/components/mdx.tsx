@@ -70,16 +70,31 @@ function createImage({ alt, src, ...props }: SmartImageProps & { src: string }) 
     return null;
   }
 
+  // Render at the image's natural aspect ratio (full width, scrollable if very
+  // wide) and open full-size in a new tab on click — works for any diagram size.
   return (
-    <SmartImage
+    <a
+      href={src}
+      target="_blank"
+      rel="noreferrer"
       className="my-20"
-      enlarge
-      radius="m"
-      aspectRatio="16 / 9"
-      alt={alt}
-      src={src}
-      {...props}
-    />
+      style={{ display: "block", overflowX: "auto" }}
+      title="Open full size"
+    >
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={src}
+        alt={alt}
+        style={{
+          width: "100%",
+          height: "auto",
+          minWidth: 0,
+          display: "block",
+          borderRadius: "12px",
+          border: "1px solid var(--neutral-alpha-weak)",
+        }}
+      />
+    </a>
   );
 }
 
