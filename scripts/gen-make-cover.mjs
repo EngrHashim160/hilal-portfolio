@@ -28,7 +28,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" 
     <text x="98" y="106" font-size="20" font-weight="600" fill="#c4b5fd">Make.com Expert</text>
     <text x="80" y="250" font-size="74" font-weight="800" fill="#f1f5f9" letter-spacing="-1">Make.com</text>
     <text x="80" y="330" font-size="74" font-weight="800" fill="#f1f5f9" letter-spacing="-1">Automations</text>
-    <text x="80" y="392" font-size="24" font-weight="500" fill="#94a3b8">10 production workflows · CRM, email, billing &amp; e-commerce</text>
+    <text x="80" y="392" font-size="24" font-weight="500" fill="#94a3b8">11 production workflows · CRM, email, billing &amp; e-commerce</text>
     ${chips}
   </g>
 </svg>`;

@@ -1,9 +1,29 @@
 import { notFound } from "next/navigation";
 import { getPosts } from "@/app/utils/utils";
-import { Column } from "@/once-ui/components";
+import { Column, Heading, Text } from "@/once-ui/components";
 import { Projects } from "@/components/work/Projects";
 import { baseURL, routes } from "@/app/resources";
 import { person, work } from "@/app/resources/content";
+
+// Project categories rendered as labeled sections so clients can quickly tell
+// which platform each project was built on.
+const categories: { tag: string; title: string; subtitle: string }[] = [
+  {
+    tag: "n8n",
+    title: "n8n Automations",
+    subtitle: "AI-powered workflows and agents built in n8n",
+  },
+  {
+    tag: "Make.com",
+    title: "Make.com Automations",
+    subtitle: "Production scenarios with multi-branch routers and integrations",
+  },
+  {
+    tag: "AI & Agents",
+    title: "AI Agents & Applications",
+    subtitle: "Agentic systems, voice agents, and applied AI projects",
+  },
+];
 
 export async function generateMetadata() {
   if (!routes["/work"]) {
@@ -72,7 +92,21 @@ export default function Work() {
           }),
         }}
       />
-      <Projects />
+      <Column fillWidth gap="xl">
+        {categories.map((cat) => (
+          <Column key={cat.tag} fillWidth gap="m">
+            <Column gap="4" paddingX="l">
+              <Heading as="h2" variant="display-strong-xs">
+                {cat.title}
+              </Heading>
+              <Text variant="body-default-m" onBackground="neutral-weak">
+                {cat.subtitle}
+              </Text>
+            </Column>
+            <Projects category={cat.tag} />
+          </Column>
+        ))}
+      </Column>
     </Column>
   );
 }
