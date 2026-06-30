@@ -1,0 +1,14 @@
+---
+title: "Make.com — Stripe Event Router"
+publishedAt: "2026-06-25"
+tag: "Make.com"
+summary: "A 75-module Make.com Stripe webhook orchestrator that routes every subscription lifecycle event through nested branches — syncing Airtable, AWeber, and SuiteDash."
+images:
+  - "/work/make-master-flow-stripe.png"
+---
+
+A central **Stripe webhook orchestrator** built in Make.com with 75 modules — the flagship scenario.
+
+It receives Stripe events, verifies them with HTTP calls, looks up the customer in Airtable, then routes through nested routers to handle each subscription lifecycle event — creating and updating Airtable records and keeping subscribers in sync across AWeber and SuiteDash.
+
+**Apps:** Stripe, Airtable, AWeber, SuiteDash, HTTP, webhooks, multi-branch routers.
